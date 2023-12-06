@@ -513,7 +513,7 @@ Berikut adalah langkah-langkah penggabungan IP subnet yang telah kami tentukan s
 ![Subnet Map](Img/SubnetJ.png)  
 
 #### Penggabungan 6 (Subnet K)
-![Subnet Map](Img/TopologiJ.png)
+![Subnet Map](Img/TopologiK.png)
     
 ![Subnet Map](Img/SubnetK.png)  
 
