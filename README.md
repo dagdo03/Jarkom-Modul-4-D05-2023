@@ -47,428 +47,413 @@ Berikut adalah visualisasi pembagian subnet pada topologi jaringan.
 Berikut adalah konfigurasi jaringan tiap node pada topologi.
 - Aura
 ```bash
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet dhcp
 
 auto eth1
 iface eth1 inet static
-	address 10.40.65.1
-	netmask 255.255.255.252
+address 10.24.0.37
+netmask 255.255.255.252
 
 auto eth2
 iface eth2 inet static
-	address 10.40.66.34
-	netmask 255.255.255.252
+address 10.24.0.1
+netmask 255.255.255.252
 
 auto eth3
 iface eth3 inet static
-	address 10.40.192.9
-	netmask 255.255.255.252
+address 10.24.0.17
+netmask 255.255.255.252
 ```
 - Frieren
 ```bash
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-	address 10.40.66.33
-	netmask 255.255.255.252
+address 10.24.0.2
+netmask 255.255.255.252
+gateway 10.24.0.1
 
 auto eth1
 iface eth1 inet static
-	address 10.40.16.2
-	netmask 255.255.255.252
+address 10.24.0.65
+netmask 255.255.255.224
 
 auto eth2
 iface eth2 inet static
-	address 10.40.66.1
-	netmask 255.255.255.224
+address 10.24.0.5
+netmask 255.255.255.252
 ```
 - Flamme
 ```bash
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-	address 10.40.16.1
-	netmask 255.255.255.252
+address 10.24.0.6
+netmask 255.255.255.252
+gateway 10.24.0.5
 
 auto eth1
 iface eth1 inet static
-	address 10.40.8.2
-	netmask 255.255.255.252
+address 10.24.0.9
+netmask 255.255.255.252
 
 auto eth2
 iface eth2 inet static
-	address 10.40.36.9
-	netmask 255.255.255.252
+address 10.24.8.1
+netmask 255.255.252.0
 
 auto eth3
 iface eth3 inet static
-	address 10.40.32.1
-	netmask 255.255.252.0
+address 10.24.0.13
+netmask 255.255.255.252
 ```
 - Fern
 ```bash
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-	address 10.40.8.1
-	netmask 255.255.255.252
+address 10.24.0.10
+netmask 255.255.255.252
+gateway 10.24.0.9
 
 auto eth1
 iface eth1 inet static
-	address 10.40.0.1
-	netmask 255.255.248.0
+address 10.24.24.1
+netmask 255.255.248.0
 ```
 - Himmel
 ```bash
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-	address 10.40.36.10
-	netmask 255.255.255.252
+address 10.24.0.14
+netmask 255.255.255.252
+gateway 10.24.0.13
 
 auto eth1
 iface eth1 inet static
-	address 10.40.36.1
-	netmask 255.255.255.248
+address 10.24.0.41
+netmask 255.255.255.248
 ```
 - Denken
 ```bash
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-	address 10.40.65.2
-	netmask 255.255.255.252
+address 10.24.0.38
+netmask 255.255.255.252
+gateway 10.24.0.37
 
 auto eth1
 iface eth1 inet static
-	address 10.40.64.1
-	netmask 255.255.255.0
+address 10.24.2.1
+netmask 255.255.255.0
 ```
 - Eisen
 ```bash
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-	address 10.40.192.10
-	netmask 255.255.255.252
+address 10.24.0.18
+netmask 255.255.255.252
+gateway 10.24.0.17
 
 auto eth1
 iface eth1 inet static
-	address 10.40.146.1
-	netmask 255.255.255.252
+address 10.24.0.25
+netmask 255.255.255.252
 
 auto eth2
 iface eth2 inet static
-	address 10.40.168.1
-	netmask 255.255.255.252
+address 10.24.0.49
+netmask 255.255.255.248
 
 auto eth3
 iface eth3 inet static
-	address 10.40.176.1
-	netmask 255.255.255.252
+address 10.24.0.25
+netmask 255.255.255.252
 
 auto eth4
 iface eth4 inet static
-	address 10.40.192.1
-	netmask 255.255.255.248
+address 10.24.0.29
+netmask 255.255.255.252
 ```
 - Lugner
 ```bash
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-	address 10.40.168.2
-	netmask 255.255.255.252
+address 10.24.0.26
+netmask 255.255.255.252
+gateway 10.24.0.25
 
 auto eth1
 iface eth1 inet static
-	address 10.40.160.1
-	netmask 255.255.252.0
+address 10.24.1.1
+netmask 255.255.255.0
 
 auto eth2
 iface eth2 inet static
-	address 10.40.164.1
-	netmask 255.255.255.0
+address 10.24.12.1
+netmask 255.255.252.0
 ```
 - Linie
 ```bash
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-	address 10.40.146.2
-	netmask 255.255.255.252
+address 10.24.0.30
+netmask 255.255.255.252
+gateway 10.24.0.29
 
 auto eth1
 iface eth1 inet static
-	address 10.40.136.1
-	netmask 255.255.252.0
+address 10.24.0.33
+netmask 255.255.255.252
 
 auto eth2
 iface eth2 inet static
-	address 10.40.144.1
-	netmask 255.255.254.0
+address 10.24.4.1
+netmask 255.255.240.0
 ```
 - Lawine
 ```bash
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-	address 10.40.136.2
-	netmask 255.255.255.252
+address 10.24.0.34
+netmask 255.255.255.252
+gateway 10.24.0.33
 
 auto eth1
 iface eth1 inet static
-	address 10.40.132.1
-	netmask 255.255.255.192
+address 10.24.0.129
+netmask 255.255.255.192
 ```
 - Heiter
 ```bash
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-	address 10.40.132.2
-	netmask 255.255.255.192
+address 10.24.0.130
+netmask 255.255.255.192
+gateway 10.24.0.129
 
 auto eth1
 iface eth1 inet static
-	address 10.40.128.1
-	netmask 255.255.252.0
+address 10.24.16.1
+netmask 255.255.252.0
 ```
 - Stark
 ```bash
 auto eth0
 iface eth0 inet static
-	address 10.40.176.2
-	netmask 255.255.255.252
-	gateway 10.40.176.1
+address 10.24.0.26
+netmask 255.255.255.252
+gateway 10.24.0.25
 ```
 - Richter
 ```bash
 auto eth0
 iface eth0 inet static
-	address 10.40.192.2
-	netmask 255.255.255.248
-	gateway 10.40.192.1
+address 10.24.0.51
+netmask 255.255.255.248
+gateway 10.24.0.49
 ```
 - Revolte
 ```bash
 auto eth0
 iface eth0 inet static
-	address 10.40.192.3
-	netmask 255.255.255.248
-	gateway 10.40.192.1
+address 10.24.0.50
+netmask 255.255.255.248
+gateway 10.24.0.49
 ```
 - Sein
 ```bash
 auto eth0
 iface eth0 inet static
-	address 10.40.128.2
-	netmask 255.255.252.0
-	gateway 10.40.128.1
+address 10.24.16.3
+netmask 255.255.252.0
+gateway 10.24.16.1
 ```
 - LaubHills (397 host)
 ```bash
 auto eth0
 iface eth0 inet static
-	address 10.40.0.2
-	netmask 255.255.248.0
-	gateway 10.40.0.1
+address 10.24.24.3
+netmask 255.255.248.0
+gateway 10.24.24.1
 ```
 - AppetitRegion (625 host)
 ```bash
 auto eth0
 iface eth0 inet static
-	address 10.40.3.0
-	netmask 255.255.248.0
-	gateway 10.40.0.1
+address 10.24.24.2
+netmask 255.255.248.0
+gateway 10.24.24.1
 ```
 - LakeKorridor (24 host)
 ```bash
 auto eth0
 iface eth0 inet static
-	address 10.40.66.3
-	netmask 255.255.255.224
-	gateway 10.40.66.1
+address 10.24.0.66
+netmask 255.255.255.224
+gateway 10.24.0.65
 ```
 - RohrRoad (1000 host)
 ```bash
 auto eth0
 iface eth0 inet static
-	address 10.40.32.2
-	netmask 255.255.252.0
-	gateway 10.40.32.1
+address 10.24.8.2
+netmask 255.255.252.0
+gateway 10.24.8.1
 ```
 - RoyalCapital (63 host)
 ```bash
 auto eth0
 iface eth0 inet static
-	address 10.40.64.64
-	netmask 255.255.255.0
-	gateway 10.40.64.1
+address 10.24.2.3
+netmask 255.255.255.0
+gateway 10.24.2.1
 ```
 - WilleRegion (63 host)
 ```bash
 auto eth0
 iface eth0 inet static
-	address 10.40.64.65
-	netmask 255.255.255.0
-	gateway 10.40.64.1
+address 10.24.2.2
+netmask 255.255.255.0
+gateway 10.24.2.1
 ```
 - TurkRegion (1000 host)
 ```bash
 auto eth0
 iface eth0 inet static
-	address 10.40.160.2
-	netmask 255.255.252.0
-	gateway 10.40.160.1
+address 10.24.12.2
+netmask 255.255.252.0
+gateway 10.24.12.1
 ```
 - GrobeForest (250 host)
 ```bash
 auto eth0
 iface eth0 inet static
-	address 10.40.164.2
-	netmask 255.255.252.0
-	gateway 10.40.164.1
+address 10.24.1.2
+netmask 255.255.255.0
+gateway 10.24.1.1
 ```
 - GranzChannel (254 host)
 ```bash
 auto eth0
 iface eth0 inet static
-	address 10.40.144.2
-	netmask 255.255.254.0
-	gateway 10.40.144.1
+address 10.24.4.2
+netmask 255.255.240.0
+gateway 10.24.4.1
 ```
 - BredtRegion (29 host)
 ```bash
 auto eth0
 iface eth0 inet static
-	address 10.40.132.3
-	netmask 255.255.255.192
-	gateway 10.40.132.1
+address 10.24.0.131
+netmask 255.255.255.192
+gateway 10.24.0.129
 ```
 - RiegelCanyon (510 host)
 ```bash
 auto eth0
 iface eth0 inet static
-	address 10.40.128.3
-	netmask 255.255.252.0
-	gateway 10.40.128.1
+address 10.24.16.2
+netmask 255.255.252.0
+gateway 10.24.16.1
 ```
 Berikut adalah konfigurasi routing pada tiap node.
 - Aura
 ```bash
-# kiri (frieren)
-route add -net 10.40.0.0 netmask 255.255.248.0 gw 10.40.66.33 # subnet A1
-route add -net 10.40.8.0 netmask 255.255.255.252 gw 10.40.66.33 # subnet A2
-route add -net 10.40.32.0 netmask 255.255.252.0 gw 10.40.66.33 # subnet A3
-route add -net 10.40.36.8 netmask 255.255.255.252 gw 10.40.66.33 # subnet A4
-route add -net 10.40.36.0 netmask 255.255.255.248 gw 10.40.66.33 # subnet A5
-route add -net 10.40.16.0 netmask 255.255.255.252 gw 10.40.66.33 # subnet A6
-route add -net 10.40.66.0 netmask 255.255.255.224 gw 10.40.66.33 # subnet A7
-
-# kanan (denken)
-route add -net 10.40.64.0 netmask 255.255.255.0 gw 10.40.65.2 # subnet A10
-
-# bawah (eisen)
-route add -net 10.40.176.0 netmask 255.255.255.252 gw 10.40.192.10 # subnet A12
-route add -net 10.40.192.0 netmask 255.255.255.248 gw 10.40.192.10 # subnet A13
-route add -net 10.40.168.0 netmask 255.255.255.252 gw 10.40.192.10 # subnet A14
-route add -net 10.40.160.0 netmask 255.255.252.0 gw 10.40.192.10 # subnet A15
-route add -net 10.40.164.0 netmask 255.255.255.0 gw 10.40.192.10 # subnet A16
-route add -net 10.40.146.0 netmask 255.255.255.252 gw 10.40.192.10 # subnet A17
-route add -net 10.40.136.0 netmask 255.255.255.252 gw 10.40.192.10 # subnet A18
-route add -net 10.40.132.0 netmask 255.255.255.192 gw 10.40.192.10 # subnet A19
-route add -net 10.40.128.0 netmask 255.255.252.0 gw 10.40.192.10 # subnet A20
-route add -net 10.40.144.0 netmask 255.255.254.0 gw 10.40.192.10 # subnet A21
+#eth1
+up route add -net 10.24.2.0 netmask 255.255.255.0 gw 10.24.0.38
+#eth2
+up route add -net 10.24.0.64 netmask 255.255.255.224 gw 10.24.0.2
+up route add -net 10.24.0.4 netmask 255.255.255.252 gw 10.24.0.2
+up route add -net 10.24.0.8 netmask 255.255.255.252 gw 10.24.0.2
+up route add -net 10.24.24.0 netmask 255.255.248.0 gw 10.24.0.2
+up route add -net 10.24.8.0 netmask 255.255.252.0 gw 10.24.0.2
+up route add -net 10.24.0.40 netmask 255.255.255.248 gw 10.24.0.2
+#eth3
+up route add -net 10.24.0.48 netmask 255.255.255.248 gw 10.24.0.18
+up route add -net 10.24.0.40 netmask 255.255.255.248 gw 10.24.0.18
+up route add -net 10.24.0.24 netmask 255.255.255.252 gw 10.24.0.18
+up route add -net 10.24.1.0 netmask 255.255.255.0 gw 10.24.0.18
+up route add -net 10.24.12.0 netmask 255.255.252.0 gw 10.24.0.18
+up route add -net 10.24.0.128 netmask 255.255.255.192 gw 10.24.0.18
+up route add -net 10.24.16.0 netmask 255.255.255.252 gw 10.24.0.18
+up route add -net 10.24.0.20 netmask 255.255.255.252 gw 10.24.0.18
+up route add -net 10.24.0.28 netmask 255.255.255.252 gw 10.24.0.18
+up route add -net 10.24.4.0 netmask 255.255.240.0 gw 10.24.0.18
 ```
 - Frieren
 ```bash
 # bind everywhere
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.40.66.34
-
-route add -net 10.40.0.0 netmask 255.255.248.0 gw 10.40.16.1 # subnet A1
-route add -net 10.40.8.0 netmask 255.255.255.252 gw 10.40.16.1 # subnet A2
-route add -net 10.40.32.0 netmask 255.255.252.0 gw 10.40.16.1 # subnet A3
-route add -net 10.40.36.8 netmask 255.255.255.252 gw 10.40.16.1 # subnet A4
-route add -net 10.40.36.0 netmask 255.255.255.248 gw 10.40.16.1 # subnet A5
+up route add -net 10.24.0.8 netmask 255.255.255.252 gw 10.24.0.6
+up route add -net 10.24.24.0 netmask 255.255.248.0 gw 10.24.0.6
+up route add -net 10.24.0.12 netmask 255.255.255.252 gw 10.24.0.6
+up route add -net 10.24.0.40 netmask 255.255.255.248 gw 10.24.0.6
+up route add -net 10.24.8.0 netmask 255.255.252.0 gw 10.24.0.6
+up route add -net 10.24.0.40 netmask 255.255.255.248 gw 10.24.0.6
 ```
 - Flamme
 ```bash
 # bind everyhere
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.40.16.2
-
-route add -net 10.40.0.0  netmask 255.255.248.0 gw 10.40.8.1 # subnet A1
-route add -net 10.40.36.0 netmask 255.255.255.248 gw 10.40.36.10 # subnet A5
-```
-- Fern
-```bash
-# bind everywhere
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.40.8.2
-```
-- Himmel
-```bash
-# bind everywhere
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.40.36.9
-```
-- Denken
-```bash
-# bind everywhere
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.40.65.1
+up route add -net 10.24.24.0 netmask 255.255.248.0 gw 10.24.0.10
+up route add -net 10.24.0.40 netmask 255.255.255.248 gw 10.24.0.14
 ```
 - Eisen
 ```bash
 # bind everywhere
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.40.192.9
+#eth3
+up route add -net 10.24.12.0 netmask 255.255.252.0 gw 10.24.0.26
+up route add -net 10.24.1.0 netmask 255.255.255.0 gw 10.24.0.26
 
-route add -net 10.40.160.0 netmask 255.255.252.0 gw 10.40.168.2 # subnet A15
-route add -net 10.40.164.0 netmask 255.255.255.0 gw 10.40.168.2 # subnet A16
-route add -net 10.40.136.0 netmask 255.255.255.252 gw 10.40.146.2 # subnet A18
-route add -net 10.40.132.0 netmask 255.255.255.192 gw 10.40.146.2 # subnet A19
-route add -net 10.40.128.0 netmask 255.255.252.0 gw 10.40.146.2 # subnet A20
-route add -net 10.40.144.0 netmask 255.255.254.0 gw 10.40.146.2 # subnet A21
-```
-- Lugner
-```bash
-# bind everywhere
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.40.168.1
+#eth4
+up route add -net 10.24.4.0 netmask 255.255.240.0 gw 10.24.0.30
+up route add -net 10.24.0.32 netmask 255.255.255.252 gw 10.24.0.30
+up route add -net 10.24.16.0 netmask 255.255.255.252 gw 10.24.0.30
+up route add -net 10.24.0.128 netmask 255.255.255.192 gw 10.24.0.30
 ```
 - Linie
 ```bash
-# bind everywhere
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.40.146.1
-
-route add -net 10.40.132.0 netmask 255.255.255.192 gw 10.40.136.2 # subnet A19
-route add -net 10.40.128.0 netmask 255.255.252.0 gw 10.40.136.2 # subnet A20
+#eth1
+up route add -net 10.24.16.0 netmask 255.255.255.252 gw 10.24.0.34
+up route add -net 10.24.0.128 netmask 255.255.255.192 gw 10.24.0.34
 ```
 - Lawine
 ```bash
 # bind everywhere
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.40.136.1
-
-route add -net 10.40.128.0 netmask 255.255.252.0 gw 10.40.132.2 # subnet A20
+up route add -net 10.24.16.0 netmask 255.255.252.0 gw 10.24.0.130
 ```
-- Heiter
-```bash
-# bind everywhere
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.40.132.1
-```
-
-### Testing
-Setelah melakukan routing, kita dapat mengecek apakah konfigurasi route sudah benar dengan memasukkan perintah sebagai berikut pada terminal.
-```
-route -n
-```
-Berikut adalah konfigurasi routing pada node Frieren.
-```bash
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.40.66.34 # bind everywhere
-route add -net 10.40.0.0 netmask 255.255.248.0 gw 10.40.16.1 # subnet A1
-route add -net 10.40.8.0 netmask 255.255.255.252 gw 10.40.16.1 # subnet A2
-route add -net 10.40.32.0 netmask 255.255.252.0 gw 10.40.16.1 # subnet A3
-route add -net 10.40.36.8 netmask 255.255.255.252 gw 10.40.16.1 # subnet A4
-route add -net 10.40.36.0 netmask 255.255.255.248 gw 10.40.16.1 # subnet A5
-```
-Setelah dilakukan pengecekan dengan perintah `route -n`, maka akan terlihat sebagai berikut.
-![route](https://github.com/afsulthon/Jarkom-Modul-4-E07-2023/assets/107914177/3804ffe7-96cf-4827-9ed5-fe000053dba0)  
-Selain itu, kita dapat mengetes apakah routing telah sukses dengan melakukan PING dari node ke node. Misalkan, kita melakukan PING dari client AppetitRegion menuju server Sein.
-![PING](https://github.com/afsulthon/Jarkom-Modul-4-E07-2023/assets/107914177/b789aedc-9753-4d5d-a029-3f13ad11c615)  
-Kita dapat melakukan command berikut pada terminal AppetitRegion untuk meng-PING Sein. (`10.40.128.2` merupakan alamat IP dari Sein)
-```
-ping 10.40.128.2
-```
-Berikut adalah tampilan terminal ketika berhasil melakukan PING.
-![ping](https://github.com/afsulthon/Jarkom-Modul-4-E07-2023/assets/107914177/943cc860-cfc7-444d-b528-d90a03003ed4)
-
+## Testing
+![](Img/image.png)
 
 ## CIDR
 Classless Inter-Domain Routing (CIDR) adalah metode pengalamatan IP yang memungkinkan alokasi alamat yang lebih efisien dengan menggunakan panjang prefix untuk menentukan panjang subnet. 
@@ -544,4 +529,4 @@ Berikut adalah tabel hasil dari pembagian IP berdasarkan tree di atas.
 
 ## Kendala
 - Kurangnya informasi terkait implementasi CIDR pada topologi GNS3 di modul praktikum membuat sedikit bingung saat melakukan konfigurasi node.
-- Terkadang terjadi anomali saat melakukan PING pada node tertentu di GNS3, namun ketika projek dibuka ulang PING kembali normal.
+- Terkadang terjadi kendala eror ketika melakukan ping pada gns (awalnya bisa tiba tiba tidak bisa)
